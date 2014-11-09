@@ -1,0 +1,220 @@
+@font-face {
+    font-family: biko-bold;
+    src: url(fonts/Biko_Bold.otf);
+}
+
+@font-face {
+    font-family: biko-reg;
+    src: url(fonts/Biko_Regular.otf);
+}
+
+
+main {
+	width:320px;
+	margin: auto;
+}
+
+.introduction {
+	background-image: url(images/intro-image.jpg);
+	height: 176px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+section {
+	margin-bottom: 26px;
+}
+
+figure {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+.introduction > figure {
+	display: block;
+	position: absolute;
+	bottom: 0;
+}
+
+nav {
+	text-align: right;
+	padding: 5px;
+}
+
+nav > a {
+	color: white;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 5px;
+	font-family: biko-reg;
+}
+
+header {
+	padding-bottom: 18px;
+
+}
+
+header > p {
+	text-align: center;
+	color: #306591;
+	font-size: 15px;
+	padding-bottom: 2px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-family: biko-bold;
+}
+
+summary {
+	text-align: center;
+	font-size: 10px;
+	font-family: playfair display;
+	font-style: italic;
+	position: relative;
+	padding-bottom: 5px;
+	width: 275px;
+	margin: auto;
+	color: #777777;
+}
+
+
+summary:before {
+	content: "";
+  	position: absolute;
+  	bottom: 0;
+  	height: 1px;
+  	width: 100px;  /* or 100px */
+  	border-bottom: 1px solid #D4D882;
+  	left: 50%;
+  	margin-left: -50px;
+}
+
+.process-icons > ul {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0;
+	text-align: center;
+}
+
+.process-icons > ul > li {
+	display: inline-block;
+	font-size: 7px;
+	width: 43px;
+	padding-left: 15px;
+	font-family: biko-reg;
+	color: #8CB3D4;
+}
+
+.process-icons > ul > li > img {
+	padding-bottom: 2px;
+}
+
+.process > header {
+	padding-bottom: 15px;
+
+}
+
+article {
+	text-align: center;
+	font-size: 12px;
+	font-family: nunito;
+	font-weight: 100;
+	line-height: 18px;
+}
+
+article > p {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	padding-bottom: 10px;
+	width: 296px;
+	color: #444444;
+	margin: auto;
+}
+
+.student-thumbs {
+	margin-bottom: 20px;
+}
+
+.student-thumbs > .thumb {
+	width: 260px;
+	height: 40px;
+	background: rgb(231, 231, 231);
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+.load {
+	text-align: center;
+}
+
+.quotes > header > figure {
+	background-image: url(images/words.png);
+	width: 320px;
+	height: 14.5px;
+	height: 18px;
+	background-repeat: no-repeat;
+}
+
+footer {
+	text-align: center;
+	font-family: nunito;
+	font-weight: 400;
+	font-size: 7px;
+	clear: both;
+}
+
+.quote-slides {
+	width: 300px;
+}
+
+.quote-text {
+	width: 200px;
+	height: 100px;
+	float: left;
+	text-align: center;
+	font-family: nunito;
+	font-weight: 100;
+	font-size: 9px;
+	padding: 0 25px 0 25px;
+}
+
+.left {
+	text-align: right;
+}
+
+.right {
+	text-align: left;
+}
+
+.arrow {
+	width: 25px;
+	float: left;
+}
+
+.author {
+	font-family: nunito;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 8px;
+}
+
+.student-work > header {
+	background-image: url("images/view-btn.png");
+	background-repeat: no-repeat;
+	background-position: -10px 0px;
+	position: relative;
+}
+
+.click {
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	right: 14px;
+	bottom: 30px;
+}
