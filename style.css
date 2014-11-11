@@ -46,6 +46,7 @@ figure {
 	width: 60%;
 	/*text-align: center;*/
 	margin: auto;
+	padding-bottom: 6px;
 }
 
 .introduction > figure > img {
@@ -89,9 +90,10 @@ summary {
 	font-style: italic;
 	position: relative;
 	padding-bottom: 5px;
-	width: 75%;
+	width: 80%;
 	margin: auto;
 	color: #777777;
+	line-height: 16px;
 }
 
 
@@ -188,13 +190,22 @@ footer {
 	clear: both;
 }
 
+footer > p {
+	display: block;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
 .quote-slides {
 	width: 100%;
+	overflow: auto;
 }
 
 .quote-text {
 	width: 40%;
-	height: 100px;
 	float: left;
 	text-align: center;
 	font-family: nunito;
@@ -237,4 +248,95 @@ footer {
 	height: 20px;
 	right: 50px;
 	bottom: 30px;
+}
+
+
+
+
+
+
+
+/* slider styles */
+
+
+#slides {
+	text-align: center;
+}
+
+a.slidesjs-previous.slidesjs-navigation {
+	float: left;
+	width: 20%;
+}
+
+.slidesjs-container {
+	width: 60%;
+	float: left;
+}
+
+a.slidesjs-next.slidesjs-navigation {
+	float: left;
+	width: 20%;
+}
+
+.slidesjs-pagination {
+	clear: both;
+}
+
+.slidesjs-pagination-item {
+	display: inline-block;
+}
+
+
+ul.slidesjs-pagination {
+	list-style-type: disc;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+
+
+
+
+
+
+
+/*second slide*/
+
+.rslides {
+	position: relative;
+	list-style: none;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+
+.centered-btns_nav:hover {
+	opacity: 1;
 }
