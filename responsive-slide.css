@@ -45,7 +45,7 @@ a {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   top: 50%;
-  left: 5px;
+  left: 0;
   opacity: 0.7;
   text-indent: -9999px;
   overflow: hidden;
@@ -63,7 +63,7 @@ a {
 .centered-btns_nav.next {
   left: auto;
   background-position: right top;
-  right: 5px;
+  right: 0;
   }
 
 .transparent-btns_nav {
