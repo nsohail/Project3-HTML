@@ -90,7 +90,7 @@ summary {
 	font-style: italic;
 	position: relative;
 	padding-bottom: 5px;
-	width: 80%;
+	width: 85%;
 	margin: auto;
 	color: #777777;
 	line-height: 16px;
@@ -125,6 +125,11 @@ summary:before {
 	font-family: biko-reg;
 	color: #8CB3D4;
 }
+
+
+.process-icons > ul > li:first-child {
+	padding-left: 0;
+} 
 
 .process-icons > ul > li > img {
 	padding-bottom: 2px;
@@ -235,11 +240,19 @@ footer > p {
 }
 
 .student-work > header {
-	background-image: url("images/view-btn.png");
+	/*background-image: url("images/view-btn.png");*/
 	display: block;
-	background-repeat: no-repeat;
-	background-position: 50% 0;
+	/*background-repeat: no-repeat;
+	background-position: 40% 0;*/
 	position: relative;
+	width: 75%;
+	margin: auto;
+}
+
+.view-option {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .click {
