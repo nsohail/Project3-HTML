@@ -88,10 +88,9 @@
 
 			<div class="hover panel">
 				<div class="front student-thumbs">
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
+					<div class="thumb"><img src="images/vivian-thumb.jpg"></div>
+					<div class="thumb"><img src="images/massie-thumb.jpg"></div>
+					<div class="thumb"><img src="images/neha-thumb.jpg"></div>
 					<div class="thumb"></div>
 					<div class="thumb"></div>
 
@@ -194,11 +193,16 @@
 
 	        	if($(".hover").hasClass("flip")){
 	        		removeFlip();
-	        		$(".load").show();
+	        		$(".load").fadeIn();
+	        		$(".back").css("position","absolute");
+	        		$(".front").css("position","relative");
 	        	}else{
 	        		addFlip();
 	        		$(".load").hide();
-	        		//$(".panel").css("position","absolute");
+	        		setTimeout (function(){
+	        			$(".back").css("position","relative");
+	        			$(".front").css("position","absolute");
+	        		}, 200);	
 	        	}
 	        });
 

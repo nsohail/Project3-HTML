@@ -173,6 +173,11 @@ article > p {
 	background: rgb(231, 231, 231);
 	margin: auto;
 	margin-bottom: 5px;
+	overflow: hidden;
+}
+
+.thumb > img {
+	width: 100%;
 }
 
 .load {
@@ -308,7 +313,7 @@ footer > p {
 
 
 .panel .front {
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     z-index: 900;
     width: inherit;
@@ -335,7 +340,7 @@ footer > p {
 }
 
 .panel .back {
-    /*position: absolute;*/
+    position: absolute;
     top: 0;
     z-index: 800;
     width: inherit;
