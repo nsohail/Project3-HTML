@@ -86,15 +86,26 @@
 				</div>
 			</header>
 
-			<div class="student-thumbs">
-				<div class="thumb"></div>
-				<div class="thumb"></div>
-				<div class="thumb"></div>
-				<div class="thumb"></div>
-				<div class="thumb"></div>
-				<div class="thumb"></div>
+			<div class="hover panel">
+				<div class="front student-thumbs">
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+				</div>
+
+				<div class="back student-thumbs">
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+					<div class="thumb"></div>
+				</div>
+				<!--<div class="load"><a href=""><img src="images/load-btn.png"></a></div>-->
 			</div>
-			<div class="load"><a href=""><img src="images/load-btn.png"></a></div>
 			
 
 		</section>
@@ -136,10 +147,44 @@
 	        speed: 500,
 	        maxwidth: 600,
 	        namespace: "centered-btns"
-      });
+      	});
 
 	  });
 	</script>
+
+	<script type="text/javascript">
+        $(document).ready(function(){
+
+        	var removeFlip = function(){
+        		$(".hover").removeClass("flip");
+        	}
+
+        	var addFlip = function(){
+        		$(".hover").addClass("flip");
+        	}
+
+	        $('.view-option').click(function(e){
+	        	e.preventDefault();
+
+	        	if($(".hover").hasClass("flip")){
+	        		removeFlip();
+	        	}else{
+	        		addFlip();
+	        	}
+	        });
+	     
+	       //  $('.hover').hover(function(){
+        //     $(this).addClass('flip');
+        // },function(){
+        //     $(this).removeClass('flip');
+        // });
+
+
+    	});
+
+
+
+ 	</script>
 
 
 

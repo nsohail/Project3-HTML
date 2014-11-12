@@ -29,9 +29,7 @@ a {
   color: #222;
   }
 
-.rslides {
-  margin: 0 auto;
-  }
+
 
 .rslides_container {
   margin-bottom: 50px;
@@ -173,6 +171,7 @@ a {
   overflow: hidden;
   width: 100%;
   padding: 0;
+  margin: auto;
 }
 
 .rslides li {
