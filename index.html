@@ -94,20 +94,43 @@
 					<div class="thumb"></div>
 					<div class="thumb"></div>
 					<div class="thumb"></div>
+
+					<div class="load"><a href=""><img src="images/load-btn.png"></a></div>
 				</div>
 
-				<div class="back student-thumbs">
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
-					<div class="thumb"></div>
+				<div class="back student-list">
+					<div class="column-container">
+						<ul style="margin-right: 20%;">
+							<span class="list-title">UNDERGRADUATE</span>
+							<li>Khongorzul Batzorig</li>
+							<li>Kelley Brown</li>
+							<li>Masie J. Chong</li>
+							<li>Colton M. Fouts</li>
+							<li>Shahrzad Ghabaian</li>
+							<li>Vynha N. Ho</li>
+							<li>Michelle Hong</li>
+							<li>Hye Jung Kim</li>
+							<li>Thaya Lugirawanich</li>
+							<li>Luan D. Nguyen</li>
+							<li>Carly Peak</li>
+							<li>Christian O. Penaloza</li>
+							<li>Dwayne Rodriguez</li>
+							<li>Irma L. Smith</li>
+							<li>Neha Sohail</li>
+							<li>Vivian Truong</li>						
+						</ul>
+
+						<ul>
+							<span class="list-title">GRADUATE</span>
+							<li>Melody Cook</li>
+							<li>Melvin Parada</li>
+							<li>Yathrib E. Ragsdale</li>
+						</ul>
+					</div>
 				</div>
-				<!--<div class="load"><a href=""><img src="images/load-btn.png"></a></div>-->
+
 			</div>
 			
-
 		</section>
 
 		<section class="quotes">
@@ -163,15 +186,23 @@
         		$(".hover").addClass("flip");
         	}
 
+
+
+
 	        $('.view-option').click(function(e){
 	        	e.preventDefault();
 
 	        	if($(".hover").hasClass("flip")){
 	        		removeFlip();
+	        		$(".load").show();
 	        	}else{
 	        		addFlip();
+	        		$(".load").hide();
+	        		//$(".panel").css("position","absolute");
 	        	}
 	        });
+
+
 	     
 	       //  $('.hover').hover(function(){
         //     $(this).addClass('flip');
