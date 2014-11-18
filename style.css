@@ -30,12 +30,12 @@ main {
   background-image: url(images/intro-image.jpg);
   height: 13em;
   position: relative;
-  margin-bottom: 10%;
+  margin-bottom: 2em;
   background-size: cover; 
 }
 
 section {
-  margin-bottom: 10%; 
+  margin-bottom: 26px; 
 }
 
 figure {
