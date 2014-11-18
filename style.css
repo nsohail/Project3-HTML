@@ -127,7 +127,7 @@ summary:before {
 
 .process-icons li {
   display: inline-block;
-  font-size: 7px;
+  font-size: .5em;
   width: 15%;
   padding-left: 6%;
   font-family: biko-reg, sans-serif;
