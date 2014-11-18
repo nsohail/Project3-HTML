@@ -199,7 +199,13 @@
 
 	        	if($(".hover").hasClass("flip")){
 	        		removeFlip();
-	        		$(".load").fadeIn();
+	        		
+	        		if(x > 5){
+	        			$(".load").hide();
+	        		}else{
+	        			$(".load").fadeIn();
+	        		}
+
 	        		setTimeout (function(){
 		        		$(".back").css("position","absolute");
 		        		$(".front").css("position","relative");
@@ -218,11 +224,12 @@
 
 	        size_li = $(".front-student-list li").size();
 		    x=5;
-		    $('.front-student-list li:lt('+x+')').show(); //show first 3 list items
+		    $('.front-student-list li:lt('+x+')').show(); //show first 5 list items
+
 
 		    $('.load').click(function (e) {
 		    	e.preventDefault();
-		        x = (x+2 <= size_li) ? x+2 : size_li;
+		        x = (x+2 <= size_li) ? x+2 : size_li; //if 5+2 <= the # of li items, add 2 to 5. Otherwise x=the # of li items
 		        $('.front-student-list li:lt('+x+')').fadeIn();
 
 		        if(x == size_li){
