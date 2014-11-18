@@ -85,11 +85,16 @@
 
 				<div class="hover panel">
 					<div class="front student-thumbs">
-						<div class="thumb"><img src="images/vivian-thumb.jpg"></div>
-						<div class="thumb"><img src="images/massie-thumb.jpg"></div>
-						<div class="thumb"><img src="images/neha-thumb.jpg"></div>
-						<div class="thumb"></div>
-						<div class="thumb"></div>
+						<ul class="front-student-list">
+							<li class="thumb"><img src="images/vivian-thumb.jpg"></li>
+							<li class="thumb"><img src="images/massie-thumb.jpg"></li>
+							<li class="thumb"><img src="images/neha-thumb.jpg"></li>
+							<li class="thumb"><img src="images/hyejung-thumb.jpg"></li>
+							<li class="thumb"><img src="images/ogo-thumb.jpg"></li>
+							<li class="thumb"><img src="images/carly-thumb.jpg"></li>
+							<li class="thumb"><img src="images/bebe-thumb.jpg"></li>
+						</ul>
+						
 
 						<div class="load"><a href=""><img src="images/load-btn.png"></a></div>
 					</div>
@@ -189,8 +194,6 @@
         	}
 
 
-
-
 	        $('.view-option').click(function(e){
 	        	e.preventDefault();
 
@@ -213,15 +216,23 @@
 	        });
 
 
-	     
-	       //  $('.hover').hover(function(){
-        //     $(this).addClass('flip');
-        // },function(){
-        //     $(this).removeClass('flip');
-        // });
+	        size_li = $(".front-student-list li").size();
+		    x=5;
+		    $('.front-student-list li:lt('+x+')').show(); //show first 3 list items
+
+		    $('.load').click(function (e) {
+		    	e.preventDefault();
+		        x = (x+2 <= size_li) ? x+2 : size_li;
+		        $('.front-student-list li:lt('+x+')').fadeIn();
+
+		        if(x == size_li){
+		        	$('.load').hide();
+		        }
+		    });
 
 
-    	});
+
+    	}); //end document ready
 
 
 

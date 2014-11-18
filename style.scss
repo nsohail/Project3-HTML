@@ -1,0 +1,395 @@
+$bikoreg: biko-reg, sans-serif;
+
+@font-face {
+    font-family: biko-bold;
+    src: url(fonts/Biko_Bold.otf);
+}
+
+@font-face {
+    font-family: biko-reg;
+    src: url(fonts/Biko_Regular.otf);
+}
+
+
+
+body {
+	margin: 0px;
+}
+
+main {
+	/*width:320px;
+	margin: auto;*/
+	width: 100%;
+	max-width: 1024px;
+	margin: auto;
+}
+
+
+.introduction {
+	background-image: url(images/intro-image.jpg);
+	height: 13em;
+	position: relative;
+	margin-bottom: 20px;
+	background-size: cover;
+}
+
+section {
+	margin-bottom: 26px;
+}
+
+figure {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
+.introduction {
+
+	figure {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		width: 60%;
+		/*text-align: center;*/
+		margin: auto;
+		padding-bottom: 6px;
+		max-width: 300px;
+	}
+
+	img {
+		width: 100%;
+	}
+
+} 
+
+
+nav {
+	text-align: right;
+	padding: 10px;
+}
+
+nav > a {
+	color: blue;
+	text-decoration: none;
+	font-size: 10px;
+	padding: 5px;
+	font-family: $bikoreg;
+}
+
+header {
+	padding-bottom: 18px;
+
+}
+
+header > p {
+	text-align: center;
+	color: #306591;
+	font-size: 15px;
+	padding-bottom: 2px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-family: biko-bold;
+}
+
+summary {
+	text-align: center;
+	font-size: 10px;
+	font-family: playfair display;
+	font-style: italic;
+	position: relative;
+	padding-bottom: 5px;
+	width: 70%;
+	margin: auto;
+	color: #777777;
+	line-height: 16px;
+}
+
+
+summary:before {
+	content: "";
+  	position: absolute;
+  	bottom: 0;
+  	height: 1px;
+  	width: 100px;  /* or 100px */
+  	border-bottom: 1px solid #D4D882;
+  	left: 50%;
+  	margin-left: -50px;
+}
+
+.process-icons {
+	ul {
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0;
+		-webkit-margin-start: 0px;
+		-webkit-margin-end: 0px;
+		-webkit-padding-start: 0;
+		text-align: center;
+	}
+
+	li {
+		display: inline-block;
+		font-size: 7px;
+		width: 15%;
+		padding-left: 6%;
+		font-family: $bikoreg;
+		color: #8CB3D4;
+	}
+	
+	ul > li:first-child {
+		padding-left: 0;
+	}
+
+	ul > li > img {
+		padding-bottom: 2px;
+		width: 100%;
+	}
+
+}
+
+
+.process > header {
+	padding-bottom: 15px;
+
+}
+
+article {
+	text-align: center;
+	font-size: 12px;
+	font-family: nunito;
+	font-weight: 100;
+	line-height: 18px;
+}
+
+article > p {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	padding-bottom: 10px;
+	width: 80%;
+	color: #444444;
+	margin: auto;
+}
+
+
+.student-thumbs {
+	.student-list {
+		margin-bottom: 20px;
+	}
+
+	.thumb {
+		width: 65%;
+		height: 40px;
+		background: rgb(231, 231, 231);
+		margin: auto;
+		margin-bottom: 5px;
+		overflow: hidden;
+	}
+}
+
+
+.thumb > img {
+	width: 100%;
+}
+
+
+
+.load {
+	text-align: center;
+	padding: 14px;
+}
+
+.quotes > header > figure {
+	background-image: url(images/words.png);
+	width: 100%;
+	height: 14.5px;
+	height: 18px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	margin-bottom: 8px;
+	background-size: contain;
+}
+
+
+footer {
+	text-align: center;
+	font-family: nunito;
+	font-weight: 400;
+	font-size: 7px;
+	clear: both;
+}
+
+footer > p {
+	display: block;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+
+.quote-slides {
+	width: 100%;
+	overflow: auto;
+}
+
+.quote-text {
+	width: 40%;
+	float: left;
+	text-align: center;
+	font-family: nunito;
+	font-weight: 100;
+	font-size: 9px;
+	padding: 0 5% 0 5%;
+}
+
+.left {
+	text-align: right;
+}
+
+.right {
+	text-align: left;
+}
+
+.arrow {
+	width: 25%;
+	float: left;
+}
+
+.author {
+	font-family: nunito;
+	font-style: italic;
+	font-weight: 100;
+	font-size: 8px;
+}
+
+.student-work > header {
+	/*background-image: url("images/view-btn.png");*/
+	display: block;
+	/*background-repeat: no-repeat;
+	background-position: 40% 0;*/
+	position: relative;
+	width: 80%;
+	margin: auto;
+}
+
+.view-option {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.click {
+	position: absolute;
+	width: 22px;
+	height: 20px;
+	right: 50px;
+	bottom: 30px;
+}
+
+
+.student-list > .column-container {
+	overflow: auto;
+	margin: auto;
+	width: 72%;
+	max-width: 300px;
+}
+
+
+.column-container {
+	ul {
+		float: left;
+		list-style: none;
+		width: 40%;
+	}
+
+	ul > .list-title {
+		font-size: 14px;
+		color: #306591;
+		font-family: biko-bold;
+	}
+
+	ul > li {
+	font-size: 14px;
+	line-height: 22px;
+	}
+
+}
+
+
+
+
+
+
+
+/* flip styles */
+
+.panel {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+
+
+.panel .front {
+    /*position: absolute;*/
+    top: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.panel.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+
+.panel .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+ 
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.panel.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
