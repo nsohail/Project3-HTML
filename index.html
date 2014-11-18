@@ -81,7 +81,7 @@
 						Check out what students from the course have done
 					</summary>
 					<div class="view-option">
-						<a href=""><img src="images/view-btn.png"></a>
+						<a href=""><img class="view-option-pic" src="images/view-btn.png"></a>
 					</div>
 				</header>
 
@@ -202,20 +202,22 @@
 
 	        	if($(".hover").hasClass("flip")){
 	        		removeFlip();
+	        		$('.view-option-pic').attr("src", "images/view-btn.png");
 	        		
 	        		if(x >= 8){
 	        			$(".load").hide();
 	        		}else{
 	        			$(".load").fadeIn();
 	        		}
-
 	        		setTimeout (function(){
 		        		$(".back").css("position","absolute");
 		        		$(".front").css("position","relative");
 		        	}, 200);
+
 	        	}else{
 	        		addFlip();
-	        		
+	        		$('.view-option-pic').attr("src", "images/view-btn-block.png");
+
 	        		setTimeout (function(){
 	        			$(".load").hide();
 	        			$(".back").css("position","relative");
