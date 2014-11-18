@@ -4,31 +4,46 @@
 @font-face {
   font-family: biko-reg;
   src: url(fonts/Biko_Regular.otf); }
-body {
-  margin: 0px; }
+html, body {
+  margin:0;
+  padding:0;
+  height:100%; 
+}
 
 main {
   /*width:320px;
   margin: auto;*/
   width: 100%;
   max-width: 1024px;
-  margin: auto; }
+  margin: auto; 
+  padding-bottom: 30px;
+}
+
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+
 
 .introduction {
   background-image: url(images/intro-image.jpg);
   height: 13em;
   position: relative;
   margin-bottom: 20px;
-  background-size: cover; }
+  background-size: cover; 
+}
 
 section {
-  margin-bottom: 26px; }
+  margin-bottom: 26px; 
+}
 
 figure {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
+  -webkit-margin-end: 0px; 
+}
 
 .introduction figure {
   display: block;
@@ -40,23 +55,29 @@ figure {
   /*text-align: center;*/
   margin: auto;
   padding-bottom: 6px;
-  max-width: 300px; }
+  max-width: 300px; 
+}
+
 .introduction img {
-  width: 100%; }
+  width: 100%; 
+}
 
 nav {
   text-align: right;
-  padding: 10px; }
+  padding: 10px; 
+}
 
 nav > a {
   color: white;
   text-decoration: none;
   font-size: 10px;
   padding: 5px;
-  font-family: biko-reg, sans-serif; }
+  font-family: biko-reg, sans-serif; 
+}
 
 header {
-  padding-bottom: 18px; }
+  padding-bottom: 18px; 
+}
 
 header > p {
   text-align: center;
@@ -67,7 +88,8 @@ header > p {
   -webkit-margin-after: 0em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  font-family: biko-bold; }
+  font-family: biko-bold; 
+}
 
 summary {
   text-align: center;
@@ -79,7 +101,8 @@ summary {
   width: 70%;
   margin: auto;
   color: #777777;
-  line-height: 16px; }
+  line-height: 16px; 
+}
 
 summary:before {
   content: "";
@@ -90,7 +113,8 @@ summary:before {
   /* or 100px */
   border-bottom: 1px solid #D4D882;
   left: 50%;
-  margin-left: -50px; }
+  margin-left: -50px; 
+}
 
 .process-icons ul {
   -webkit-margin-before: 0;
@@ -98,29 +122,38 @@ summary:before {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0;
-  text-align: center; }
+  text-align: center; 
+}
+
 .process-icons li {
   display: inline-block;
   font-size: 7px;
   width: 15%;
   padding-left: 6%;
   font-family: biko-reg, sans-serif;
-  color: #8CB3D4; }
+  color: #8CB3D4; 
+}
+
 .process-icons ul > li:first-child {
-  padding-left: 0; }
+  padding-left: 0; 
+}
+
 .process-icons ul > li > img {
   padding-bottom: 2px;
-  width: 100%; }
+  width: 100%; 
+}
 
 .process > header {
-  padding-bottom: 15px; }
+  padding-bottom: 15px; 
+}
 
 article {
   text-align: center;
   font-size: 12px;
   font-family: nunito;
   font-weight: 100;
-  line-height: 18px; }
+  line-height: 18px; 
+}
 
 article > p {
   -webkit-margin-before: 0em;
@@ -130,24 +163,34 @@ article > p {
   padding-bottom: 10px;
   width: 80%;
   color: #444444;
-  margin: auto; }
+  margin: auto; 
+}
+
+
+.front-student-list li {
+  display: none;
+}
 
 .student-thumbs .student-list {
   margin-bottom: 20px; }
+
 .student-thumbs .thumb {
   width: 65%;
   height: 40px;
   background: #e7e7e7;
   margin: auto;
   margin-bottom: 5px;
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 .thumb > img {
-  width: 100%; }
+  width: 100%; 
+}
 
 .load {
   text-align: center;
-  padding: 14px; }
+  padding: 14px; 
+}
 
 .quotes > header > figure {
   background-image: url(images/words.png);
@@ -157,25 +200,34 @@ article > p {
   background-repeat: no-repeat;
   background-position: 50%;
   margin-bottom: 8px;
-  background-size: contain; }
+  background-size: contain; 
+}
 
 footer {
   text-align: center;
   font-family: nunito;
   font-weight: 400;
   font-size: 7px;
-  clear: both; }
+  clear: both; 
+  height: 30px;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
 
 footer > p {
   display: block;
   -webkit-margin-before: 0em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px; }
+  -webkit-margin-end: 0px; 
+}
 
 .quote-slides {
   width: 100%;
-  overflow: auto; }
+  overflow: auto; 
+}
 
 .quote-text {
   width: 40%;
@@ -184,23 +236,28 @@ footer > p {
   font-family: nunito;
   font-weight: 100;
   font-size: 9px;
-  padding: 0 5% 0 5%; }
+  padding: 0 5% 0 5%; 
+}
 
 .left {
-  text-align: right; }
+  text-align: right; 
+}
 
 .right {
-  text-align: left; }
+  text-align: left; 
+}
 
 .arrow {
   width: 25%;
-  float: left; }
+  float: left; 
+}
 
 .author {
   font-family: nunito;
   font-style: italic;
   font-weight: 100;
-  font-size: 8px; }
+  font-size: 8px; 
+}
 
 .student-work > header {
   /*background-image: url("images/view-btn.png");*/
@@ -209,37 +266,47 @@ footer > p {
   background-position: 40% 0;*/
   position: relative;
   width: 80%;
-  margin: auto; }
+  margin: auto; 
+}
 
 .view-option {
   position: absolute;
   right: 0;
-  top: 0; }
+  top: 0; 
+}
 
 .click {
   position: absolute;
   width: 22px;
   height: 20px;
   right: 50px;
-  bottom: 30px; }
+  bottom: 30px; 
+}
 
 .student-list > .column-container {
   overflow: auto;
   margin: auto;
   width: 72%;
-  max-width: 300px; }
+  max-width: 300px; 
+}
 
 .column-container ul {
   float: left;
   list-style: none;
-  width: 40%; }
+  width: 40%; 
+}
+
 .column-container ul > .list-title {
   font-size: 14px;
   color: #306591;
-  font-family: biko-bold; }
+  font-family: biko-bold; 
+}
+
 .column-container ul > li {
   font-size: 14px;
-  line-height: 22px; }
+  line-height: 22px; 
+}
+
 
 /* flip styles */
 .panel {
@@ -248,7 +315,8 @@ footer > p {
   position: relative;
   font-size: .8em;
   -webkit-perspective: 600px;
-  -moz-perspective: 600px; }
+  -moz-perspective: 600px; 
+}
 
 .panel .front {
   /*position: absolute;*/
@@ -268,12 +336,14 @@ footer > p {
   -ms-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+  transition: all .4s ease-in-out; 
+}
 
 .panel.flip .front {
   z-index: 900;
   -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg); }
+  -moz-transform: rotateY(180deg); 
+}
 
 .panel .back {
   position: absolute;
@@ -292,18 +362,15 @@ footer > p {
   -ms-transition: all .4s ease-in-out;
   -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out; }
+  transition: all .4s ease-in-out; 
+}
 
 .panel.flip .back {
   z-index: 1000;
   -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg); }
-
-/*# sourceMappingURL=style.css.map */
-
-
-
-
-.front-student-list li {
-  display: none;
+  -moz-transform: rotateX(0deg) rotateY(0deg); 
 }
+
+
+
+
