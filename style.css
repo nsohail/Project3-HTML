@@ -64,13 +64,20 @@ figure {
 
 nav {
   text-align: right;
-  padding: 10px; 
+  padding: 18px;
+  height: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.18);
+  z-index: 500;
+  width: 100%;
 }
 
 nav > a {
   color: white;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 14px;
   padding: 5px;
   font-family: biko-reg, sans-serif; 
 }

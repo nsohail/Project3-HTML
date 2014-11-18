@@ -244,6 +244,36 @@
 
 
 
+		    var sOffset = $("nav").offset().top; //equals 0
+			var shareheight = $("nav").height() + 200;
+			$(window).scroll(function() {
+				//alert(sOffset);
+			    var scrollYpos = $(document).scrollTop(); //scroll position
+
+			    if (scrollYpos < sOffset + shareheight) {
+			        $("nav").css({
+			            'background': 'rgba(255, 255, 255, 0.18)',
+			            'height': '20px'
+			        });
+
+			        $("nav > a").css({
+			        	'color': 'white'
+			        })
+
+
+			    }else {
+			    	$("nav").css({
+			            'background': 'white',
+			            'height': '30px'
+			        });
+			        $("nav > a").css({
+			        	'color': '#306591'
+			        });
+			    }
+			});
+
+
+
     	}); //end document ready
 
 
