@@ -62,16 +62,18 @@ figure {
   width: 100%; 
 }
 
+.hidden {
+  display: none;
+}
 
 .title-site {
   font-family: biko-reg, sans-serif;
   color: #306591;
-  display: none;
   text-align: left;
   position: fixed;
   top: 22px;
-  left: 16px;
   z-index: 500;
+  left: 0;
 }
 
 .progress-bar {

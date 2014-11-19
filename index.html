@@ -282,7 +282,12 @@
 			        	'background': '#ADC9DB'
 			        })
 
-			        $(".title-site").fadeIn();
+			        $(".title-site").removeClass('hidden')
+			        .animate({
+			        	left: "16"
+			        },500);
+			        
+			        
 
 			    }else {
 				    $("nav").css({
@@ -297,9 +302,8 @@
 			        	'background': '#999999'
 			        })
 
-			        $(".title-site").css({
-			        	'display': 'none'
-			        })
+			        $(".title-site").addClass('hidden').stop().removeAttr('style');
+			        
 			    }
 			}); //window scroll function ends
 
