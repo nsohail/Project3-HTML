@@ -20,11 +20,18 @@
 		<header class="introduction">
 
 			<header>
+				
 				<nav role="navigation">
 					<a href="">Home</a>
 					<a href="">About</a>
-					<a href="">Student Work</a>
+					<a href="" class="last">Student Work</a>
 				</nav>
+
+				<div class="progress-bar"></div>
+
+				<div class="title-site hidden">
+					Web Design & Usability
+				</div>
 
 			</header>
 
@@ -271,6 +278,12 @@
 			        	'color': '#306591'
 			        })
 
+			        $(".progress-bar").css({
+			        	'background': '#ADC9DB'
+			        })
+
+			        $(".title-site").fadeIn();
+
 			    }else {
 				    $("nav").css({
 				        'background': 'rgba(255, 255, 255, 0.18)',
@@ -279,6 +292,14 @@
 				    $("nav > a").css({
 				       	'color': 'white'
 				    })
+
+				    $(".progress-bar").css({
+			        	'background': '#999999'
+			        })
+
+			        $(".title-site").css({
+			        	'display': 'none'
+			        })
 			    }
 			}); //window scroll function ends
 
