@@ -185,8 +185,12 @@
 	  });
 	</script>
 
+
 	<script type="text/javascript">
         $(document).ready(function(){
+
+
+        	/*thumbnail student work flip view*/
 
         	var removeFlip = function(){
         		$(".hover").removeClass("flip");
@@ -204,7 +208,7 @@
 	        		removeFlip();
 	        		$('.view-option-pic').attr("src", "images/view-btn.png");
 	        		
-	        		if(x >= 8){
+	        		if(visibleStudentThumbs >= 8){
 	        			$(".load").hide();
 	        		}else{
 	        			$(".load").fadeIn();
@@ -227,50 +231,56 @@
 	        });
 
 
+	        /*load more thumbnails*/
+
 	        size_li = $(".front-student-list li").size();
-		    x=5;
-		    $('.front-student-list li:lt('+x+')').show(); //show first 5 list items
+		    visibleStudentThumbs=5;
+		    $('.front-student-list li:lt('+visibleStudentThumbs+')').show(); //show first 5 list items
 
 
 		    $('.load').click(function (e) {
 		    	e.preventDefault();
-		        x = (x+2 <= size_li) ? x+2 : size_li; //if 5+2 <= the # of li items, add 2 to 5. Otherwise x=the # of li items
-		        $('.front-student-list li:lt('+x+')').fadeIn();
+		        visibleStudentThumbs = (visibleStudentThumbs + 5 <= size_li) ? visibleStudentThumbs + 5 : size_li; //if 5+5 <= the # of li items, add 5 to 5. Otherwise x=the # of li items
+		        $('.front-student-list li:lt('+visibleStudentThumbs+')').fadeIn();
 
-		        if(x == size_li){
+		        if(visibleStudentThumbs == size_li){
 		        	$('.load').hide();
 		        }
 		    });
 
 
 
-		    var sOffset = $("nav").offset().top; //equals 0
-			var shareheight = $("nav").height() + 200;
+
+		    /*top navigation transition on scroll*/
+
 			$(window).scroll(function() {
-				//alert(sOffset);
-			    var scrollYpos = $(document).scrollTop(); //scroll position
-
-			    if (scrollYpos < sOffset + shareheight) {
+				
+			    //var scrollYpos = $(document).scrollTop(); //scroll position
+			    //console.log(scrollYpos);
+			    var ScrollTop = parseInt($(window).scrollTop());
+        		console.log(ScrollTop);
+			    
+			    if (ScrollTop >= 200) {
+			    	//alert(ScrollTop);
 			        $("nav").css({
-			            'background': 'rgba(255, 255, 255, 0.18)',
-			            'height': '20px'
-			        });
-
-			        $("nav > a").css({
-			        	'color': 'white'
-			        })
-
-
-			    }else {
-			    	$("nav").css({
 			            'background': 'white',
 			            'height': '30px'
-			        });
+			        })
+
 			        $("nav > a").css({
 			        	'color': '#306591'
-			        });
+			        })
+
+			    }else {
+				    $("nav").css({
+				        'background': 'rgba(255, 255, 255, 0.18)',
+				        'height': '20px'
+				    })
+				    $("nav > a").css({
+				       	'color': 'white'
+				    })
 			    }
-			});
+			}); //window scroll function ends
 
 
 
