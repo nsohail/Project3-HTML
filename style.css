@@ -28,7 +28,7 @@ main {
 
 .introduction {
   background-image: url(images/intro-image.jpg);
-  height: 13em;
+  height: 14em;
   position: relative;
   margin-bottom: 2em;
   background-size: cover; 
@@ -412,3 +412,137 @@ footer > p {
 
 
 
+/*
+
+@media only screen 
+and (min-width : 570px) {
+  .introduction {
+    height: 20em;
+  }
+}
+
+
+@media only screen 
+and (min-width : 770px) {
+  .introduction {
+    height: 24em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 300px;
+  }
+}
+
+
+@media only screen 
+and (min-width : 940px) {
+  .introduction {
+    height: 30em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 400px;
+  }
+}
+
+
+@media only screen 
+and (min-width : 940px) {
+  .introduction {
+    height: 34em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 500px;
+  }
+}
+
+*/
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+  .introduction {
+    height: 40em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 600px;
+  }
+
+  article {
+    font-size: 1em;
+    line-height: 22px;
+  }
+
+  .process-icons li {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: .5em;
+  }
+
+
+  .load {
+    clear: both;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* full width/height container */
+#slides-container {
+    width: 1024px;
+    height: 800px;
+    overflow: hidden;
+    background: green;
+    position: relative;
+}
+ 
+/* double the height/width of a viewport */
+#slides {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.slide {
+    position: absolute;
+}
+
+#slide-1 {
+    background: yellow;
+    background-size: cover;
+    width:400px;
+    height:200px;
+    top:0px;
+    left:0;
+}
+
+/* Slide 2 goes to the bottom left */
+#slide-2 {
+    background: red;
+    background-size: cover;
+    width:200px;
+    height:100px;
+    top:0;
+    right:0;
+}
