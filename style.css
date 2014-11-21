@@ -385,6 +385,10 @@ footer > p {
   -moz-transform: rotateY(180deg); 
 }
 
+
+
+
+
 .panel .back {
   position: absolute;
   top: 0;
@@ -414,63 +418,10 @@ footer > p {
 
 
 
-/*
-
-@media only screen 
-and (min-width : 570px) {
-  .introduction {
-    height: 20em;
-  }
-}
-
-
-@media only screen 
-and (min-width : 770px) {
-  .introduction {
-    height: 24em;
-  }
-
-  .introduction figure {
-    top: 200px;
-    padding-bottom: 0px;
-    max-width: 300px;
-  }
-}
-
-
-@media only screen 
-and (min-width : 940px) {
-  .introduction {
-    height: 30em;
-  }
-
-  .introduction figure {
-    top: 200px;
-    padding-bottom: 0px;
-    max-width: 400px;
-  }
-}
-
-
-@media only screen 
-and (min-width : 940px) {
-  .introduction {
-    height: 34em;
-  }
-
-  .introduction figure {
-    top: 200px;
-    padding-bottom: 0px;
-    max-width: 500px;
-  }
-}
-
-*/
-
 
 /* full width/height container */
 .slides-container {
-    width: 1024px;
+    min-width: 770px;
     height: 855px;
     overflow: hidden;
     /*background: green;*/
@@ -568,6 +519,94 @@ and (min-width : 940px) {
 
 
 
+@media only screen 
+and (min-width : 570px) {
+  .introduction {
+    height: 20em;
+  }
+
+  nav {
+    line-height: 35px;
+    padding: 18px;
+    text-align: right;
+  }
+
+  .progress-bar {
+    display: block;
+  }
+
+  .title-site {
+    visibility: visible;
+  }
+
+  .process-icons li {
+    font-size: .7em;
+  }
+}
+
+
+@media only screen 
+and (min-width : 770px) {
+  .introduction {
+    height: 24em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 300px;
+  }
+
+  .panel {
+    display: none;
+  }
+
+  .slides-container {
+    display: block;
+  }
+
+  section {
+    margin-bottom: 4em;
+  }
+
+}
+
+
+@media only screen 
+and (min-width : 940px) {
+  .introduction {
+    height: 30em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 400px;
+  }
+
+  .process-icons li {
+    font-size: 1em;
+  }
+}
+
+
+@media only screen 
+and (min-width : 940px) {
+  .introduction {
+    height: 34em;
+  }
+
+  .introduction figure {
+    top: 200px;
+    padding-bottom: 0px;
+    max-width: 500px;
+  }
+}
+
+
+
+
+
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
@@ -600,31 +639,7 @@ and (min-width : 1224px) {
     clear: both;
   }
 
-  .panel {
-    display: none;
-  }
-
-  .slides-container {
-    display: block;
-  }
-
-  nav {
-    line-height: 35px;
-    padding: 18px;
-    text-align: right;
-  }
-
-  .progress-bar {
-    display: block;
-  }
-
-  .title-site {
-    visibility: visible;
-  }
-
-  section {
-    margin-bottom: 4em;
-  }
+  
 
 }
 

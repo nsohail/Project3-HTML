@@ -145,53 +145,53 @@
 
 
 				
-				<div class="slides-container hover">
+				<div class="slides-container">
 				    <div id="slides">
 				        <div id="slide-1" class="slide" 
-				        data-0="transform:translate(-1024px,0px);"
-					    data-10p="transform:translate(-1024px,0px);"
+				        data-0="transform:translate(-770px,0px);"
+					    data-10p="transform:translate(-770px,0px);"
 					    data-100p="transform:translate(185px,0px);">
 				        </div>
 
 				        <div id="slide-2" class="slide"
-				        data-0="transform:translate(1024px,0px);"
-					    data-10p="transform:translate(1024px,0px);"
+				        data-0="transform:translate(770px,0px);"
+					    data-10p="transform:translate(770px,0px);"
 					    data-100p="transform:translate(-220px,0px);">
 				        </div>
 
 				        <div id="slide-3" class="slide"
-				        data-0="transform:translate(-2024px,0px);"
-					    data-40p="transform:translate(-2024px,0px);"
+				        data-0="transform:translate(-870px,0px);"
+					    data-40p="transform:translate(-870px,0px);"
 					    data-150p="transform:translate(185px,0px);">
 				        </div>
 
 				        <div id="slide-4" class="slide"
-				        data-0="transform:translate(2024px,0px);"
-					    data-40p="transform:translate(2024px,0px);"
+				        data-0="transform:translate(870px,0px);"
+					    data-40p="transform:translate(870px,0px);"
 					    data-150p="transform:translate(-220px,0px);">
 				        </div>
 
 				        <div id="slide-5" class="slide"
-				        data-0="transform:translate(-3024px,0px);"
-					    data-60p="transform:translate(-3024px,0px);"
+				        data-0="transform:translate(-970px,0px);"
+					    data-60p="transform:translate(-970px,0px);"
 					    data-180p="transform:translate(185px,0px);">
 				        </div>
 
 				        <div id="slide-6" class="slide"
-				        data-0="transform:translate(3024px,0px);"
-					    data-60p="transform:translate(3024px,0px);"
+				        data-0="transform:translate(970px,0px);"
+					    data-60p="transform:translate(970px,0px);"
 					    data-180p="transform:translate(-220px,0px);">
 				        </div>
 
 				        <div id="slide-7" class="slide"
-				        data-0="transform:translate(-4024px,0px);"
-					    data-100p="transform:translate(-4024px,0px);"
+				        data-0="transform:translate(-1070px,0px);"
+					    data-100p="transform:translate(-1070px,0px);"
 					    data-220p="transform:translate(185px,0px);">
 				        </div>
 
 				        <div id="slide-8" class="slide"
-				        data-0="transform:translate(4024px,0px);"
-					    data-100p="transform:translate(4024px,0px);"
+				        data-0="transform:translate(1070px,0px);"
+					    data-100p="transform:translate(1070px,0px);"
 					    data-220p="transform:translate(-220px,0px);">
 				        </div>
 				    </div>
@@ -323,9 +323,11 @@
 			    //var scrollYpos = $(document).scrollTop(); //scroll position
 			    //console.log(scrollYpos);
 			    var ScrollTop = parseInt($(window).scrollTop());
-        		console.log(ScrollTop);
+			    var bottomIntroPos = $('.introduction').height();
+
+        		console.log(bottomIntroPos);
 			    
-			    if (ScrollTop >= 200) {
+			    if (ScrollTop >= bottomIntroPos) {
 			    	//alert(ScrollTop);
 			        $("nav").css({
 			            'background': 'white',
