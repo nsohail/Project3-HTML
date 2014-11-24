@@ -19,7 +19,7 @@
 	
 		<header class="introduction">
 
-			<header>
+			<header class="intro-back">
 				
 				<nav role="navigation">
 					<a href="">Home</a>
@@ -41,7 +41,7 @@
 
 		</header>
 
-		<main>
+		<main role="main">
 
 			<section class="process">
 
@@ -254,6 +254,11 @@
 	<script type="text/javascript">
         $(document).ready(function(){
 
+        	$('body').removeAttr("style");
+
+   			// if ($(window).width() <= 770) {
+			//    $('body').removeAttr("style");
+			// }
 
         	/*thumbnail student work flip view*/
 
@@ -327,11 +332,12 @@
 
         		console.log(bottomIntroPos);
 			    
-			    if (ScrollTop >= bottomIntroPos) {
+			    if (ScrollTop >= bottomIntroPos-10) {
 			    	//alert(ScrollTop);
 			        $("nav").css({
 			            'background': 'white',
-			            'height': '30px'
+			            'height': '30px',
+			            'line-height': '40px'
 			        })
 
 			        $("nav > a").css({
@@ -339,7 +345,8 @@
 			        })
 
 			        $(".progress-bar").css({
-			        	'background': '#ADC9DB'
+			        	'background': '#ADC9DB',
+			        	'top': '16px'
 			        })
 
 			        $(".title-site").removeClass('hidden')
@@ -351,15 +358,17 @@
 
 			    }else {
 				    $("nav").css({
-				        'background': 'rgba(255, 255, 255, 0.18)',
-				        'height': '20px'
+				        'background': 'none',
+				        'height': '20px',
+				        'line-height': '65px'
 				    })
 				    $("nav > a").css({
 				       	'color': 'white'
 				    })
 
 				    $(".progress-bar").css({
-			        	'background': '#999999'
+			        	'background': '#999999',
+			        	'top': '26px'
 			        })
 
 			        $(".title-site").addClass('hidden').stop().removeAttr('style');
