@@ -35,7 +35,7 @@ main {
 }
 
 .intro-back {
-  background: rgba(77, 168, 199, 0.38);
+  background: rgba(77, 175, 199, 0.67);
   height: 100%;
   width: 100%;
 }
@@ -89,7 +89,7 @@ figure {
   position: fixed;
   top: 26px;
   right: 36px;
-  background: #999999;
+  background: white;
   z-index: 500;
   width: 224px;
   border-radius: 100px;
@@ -104,11 +104,11 @@ nav {
   right: 0px;
   -webkit-transition: background-color .4s ease;
   transition: background-color .4s ease;
-
   z-index: 500;
   width: 100%;
   padding: 10px 0 10px 0;
-  line-height: 21px;
+  line-height: 50px;
+
 }
 
 nav > a {

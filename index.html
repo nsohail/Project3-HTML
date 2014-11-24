@@ -325,14 +325,14 @@
 
 			$(window).scroll(function() {
 				
-			    //var scrollYpos = $(document).scrollTop(); //scroll position
+			    var scrollYpos = $(document).scrollTop(); //scroll position
 			    //console.log(scrollYpos);
 			    var ScrollTop = parseInt($(window).scrollTop());
 			    var bottomIntroPos = $('.introduction').height();
 
         		console.log(bottomIntroPos);
 			    
-			    if (ScrollTop >= bottomIntroPos-10) {
+			    if (scrollYpos >= 2) {
 			    	//alert(ScrollTop);
 			        $("nav").css({
 			            'background': 'white',
@@ -360,14 +360,14 @@
 				    $("nav").css({
 				        'background': 'none',
 				        'height': '20px',
-				        'line-height': '65px'
+				        'line-height': '70px'
 				    })
 				    $("nav > a").css({
 				       	'color': 'white'
 				    })
 
 				    $(".progress-bar").css({
-			        	'background': '#999999',
+			        	'background': 'white',
 			        	'top': '26px'
 			        })
 
