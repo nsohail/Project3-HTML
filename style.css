@@ -94,6 +94,8 @@ figure {
   width: 224px;
   border-radius: 100px;
   display: none;
+  -webkit-transition: top .2s ease-in-out;
+  transition: top .2s ease-in-out;
 }
 
 nav {
@@ -104,6 +106,8 @@ nav {
   right: 0px;
   -webkit-transition: background-color .4s ease;
   transition: background-color .4s ease;
+  -webkit-transition: line-height .4s ease;
+  transition: line-height .4s ease;
   z-index: 500;
   width: 100%;
   padding: 10px 0 10px 0;
@@ -411,9 +415,6 @@ footer > p {
   -moz-transform-style: preserve-3d;
   -moz-backface-visibility: hidden;
   /* -- transition is the magic sauce for animation -- */
-  -o-transition: all .4s ease-in-out;
-  -ms-transition: all .4s ease-in-out;
-  -moz-transition: all .4s ease-in-out;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out; 
 }
@@ -421,7 +422,7 @@ footer > p {
 .panel.flip .back {
   z-index: 1000;
   -webkit-transform: rotateX(0deg) rotateY(0deg);
-  -moz-transform: rotateX(0deg) rotateY(0deg); 
+  transform: rotateX(0deg) rotateY(0deg);
 }
 
 
@@ -525,6 +526,7 @@ footer > p {
     max-width: 100%;
     display: block;
     position: relative;
+    -webkit-transition: transform 0.4s;
     transition: transform 0.4s;
 }
 
@@ -539,7 +541,10 @@ footer > p {
     top: auto;
     bottom: 0;
     opacity: 0;
+    -webkit-transform: translateY(100%);
     transform: translateY(100%);
+   
+    -webkit-transition: transform 0.4s, opacity 0.1s 0.3s;
     transition: transform 0.4s, opacity 0.1s 0.3s;
     font-family: biko-REG;
 }
@@ -573,6 +578,7 @@ footer > p {
  
 .cs-style-3 figure:hover img,
 .cs-style-3 figure.cs-hover img {
+    -webkit-transform: translateY(-50px);
     transform: translateY(-50px);
 }
 
@@ -580,8 +586,11 @@ footer > p {
 .cs-style-3 figure:hover figcaption,
 .cs-style-3 figure.cs-hover figcaption {
     opacity: 1;
-    transform: translateY(0px);
+    -webkit-transition: transform 0.4s, opacity 0.1s;
     transition: transform 0.4s, opacity 0.1s;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    
 }
 
 .cs-style-3 figcaption a:hover,
@@ -602,8 +611,6 @@ footer > p {
 
 @media only screen 
 and (min-width : 570px) {
-
- 
 
   .introduction {
     height: 20em;
@@ -674,13 +681,6 @@ and (min-width : 770px) {
     margin-bottom: 5em;
   }
 
-  .centered-btns_nav {
-    left: 15%;
-  }
-
-  .centered-btns_nav.next {
-    right: 15%;
-  }
 
   article {
     font-size: 15px;
@@ -692,6 +692,10 @@ and (min-width : 770px) {
 
   footer {
     font-size: .7em;
+  }
+
+  .rslides_container {
+    width: 70% !important;
   }
 
 }
