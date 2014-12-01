@@ -104,10 +104,8 @@ nav {
   position: fixed;
   top: 0px;
   right: 0px;
-  -webkit-transition: background-color .4s ease;
-  transition: background-color .4s ease;
-  -webkit-transition: line-height .4s ease;
-  transition: line-height .4s ease;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
   z-index: 500;
   width: 100%;
   padding: 10px 0 10px 0;
