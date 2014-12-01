@@ -256,7 +256,7 @@ footer {
   text-align: center;
   font-family: nunito;
   font-weight: 400;
-  font-size: 7px;
+  font-size: .5em;
   clear: both; 
   height: 30px;
   width:100%;
@@ -335,14 +335,14 @@ footer > p {
 .student-list > .column-container {
   overflow: auto;
   margin: auto;
-  width: 72%;
+  width: 100%;
   max-width: 300px; 
 }
 
 .column-container ul {
   float: left;
   list-style: none;
-  width: 40%; 
+  width: 45%; 
 }
 
 .column-container ul > .list-title {
@@ -452,8 +452,6 @@ footer > p {
 }
 
 #slide-1 {
-    background: url(images/vivian-full.jpg);
-    background-size: cover;
     width:250px;
     height:240px;
     top:0px;
@@ -461,8 +459,6 @@ footer > p {
 }
 
 #slide-2 {
-    background: url(images/massie-full.jpg);
-    background-size: cover;
     width:350px;
     height:200px;
     top:0;
@@ -470,8 +466,6 @@ footer > p {
 }
 
 #slide-3 {
-    background: url(images/neha-full.jpg);
-    background-size: cover;
     width:250px;
     height:150px;
     top:260px;
@@ -479,8 +473,6 @@ footer > p {
 }
 
 #slide-4 {
-    background: url(images/hyejung-full.jpg);
-    background-size: cover;
     width:350px;
     height:150px;
     top:220px;
@@ -488,8 +480,6 @@ footer > p {
 }
 
 #slide-5 {
-    background: url(images/ogo-full.jpg);
-    background-size: cover;
     width:250px;
     height:150px;
     top:430px;
@@ -497,8 +487,6 @@ footer > p {
 }
 
 #slide-6 {
-    background: url(images/carly-full.jpg);
-    background-size: cover;
     width:350px;
     height:250px;
     top:390px;
@@ -506,8 +494,6 @@ footer > p {
 }
 
 #slide-7 {
-    background: url(images/bebe-full.jpg);
-    background-size: cover;
     width:250px;
     height:250px;
     top:600px;
@@ -515,13 +501,99 @@ footer > p {
 }
 
 #slide-8 {
-    background: url(images/melody-full.jpg);
-    background-size: cover;
     width:350px;
     height:150px;
     top:660px;
     right:0;
 }
+
+
+
+
+
+
+
+
+
+.slides-container figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides-container figure img {
+    max-width: 100%;
+    display: block;
+    position: relative;
+    transition: transform 0.4s;
+}
+
+.slides-container figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f2f2;
+    color: #ed4e6e;
+    height: 100px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.4s, opacity 0.1s 0.3s;
+    font-family: biko-REG;
+}
+
+.slides-container figcaption h4 {
+    margin: 0;
+    padding: 35px 19px 0px 19px;
+    text-align: center;
+    color: #ED734E;
+  }
+ 
+.grid figcaption span:before {
+    content: 'by ';
+}
+ 
+.slides-container figcaption a {
+    text-align: center;
+    padding: 0px;
+    /* border-radius: 2px; */
+    display: inline-block;
+    /* background: #ed4e6e; */
+    color: #8E8E8E;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    left: 0px;
+}
+
+
+ 
+.cs-style-3 figure:hover img,
+.cs-style-3 figure.cs-hover img {
+    transform: translateY(-50px);
+}
+
+
+.cs-style-3 figure:hover figcaption,
+.cs-style-3 figure.cs-hover figcaption {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: transform 0.4s, opacity 0.1s;
+}
+
+.cs-style-3 figcaption a:hover,
+.cs-style-3 figcaption a.cs-hover {
+    font-style: oblique;
+}
+
+
+
+
+
+
 
 
 
@@ -618,6 +690,10 @@ and (min-width : 770px) {
     display: none;
   }
 
+  footer {
+    font-size: .7em;
+  }
+
 }
 
 
@@ -667,10 +743,6 @@ and (min-width : 1224px) {
   .process-icons li {
     font-size: 1em;
     width: 12%;
-  }
-
-  footer {
-    font-size: .5em;
   }
 
 
