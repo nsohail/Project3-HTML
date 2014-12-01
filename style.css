@@ -340,13 +340,13 @@ footer > p {
   overflow: auto;
   margin: auto;
   width: 100%;
-  max-width: 300px; 
+  max-width: 280px; 
 }
 
 .column-container ul {
   float: left;
   list-style: none;
-  width: 42%; 
+  width: 45%; 
 }
 
 .column-container ul > .list-title {
