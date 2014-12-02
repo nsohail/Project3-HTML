@@ -327,6 +327,7 @@ footer > p {
   position: relative;
   width: 80%;
   margin: auto; 
+  text-align: center;
 }
 
 .view-option {
@@ -616,6 +617,13 @@ footer > p {
 }
 
 
+.scroll-icon {
+  width: 100px;
+  padding-top: 20px;
+  display: none;
+}
+
+
 
 
 
@@ -706,6 +714,10 @@ and (min-width : 770px) {
 
   .rslides_container {
     width: 70% !important;
+  }
+
+  .scroll-icon {
+    display: -webkit-inline-box;
   }
 
 }
