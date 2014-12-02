@@ -558,7 +558,7 @@ footer > p {
 
 .slides-container figcaption h4 {
     margin: 0;
-    padding: 35px 19px 0px 19px;
+    padding: 28px 19px 0px 19px;
     text-align: center;
     color: #ED734E;
   }
@@ -569,16 +569,23 @@ footer > p {
  
 .slides-container figcaption a {
     text-align: center;
-    padding: 0px;
-    /* border-radius: 2px; */
+    padding: 7px;
     display: inline-block;
-    /* background: #ed4e6e; */
     color: #8E8E8E;
     text-decoration: none;
     position: absolute;
-    bottom: 20px;
+    bottom: 14px;
+    font-size: 15px;
     right: 0px;
     left: 0px;
+    border: 1px solid rgb(215, 216, 226);
+    width: 128px;
+    margin: auto;
+}
+
+.slides-container figcaption a:hover {
+    background: rgb(74, 140, 156);
+    color: white;
 }
 
 
@@ -598,11 +605,6 @@ footer > p {
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
     
-}
-
-.cs-style-3 figcaption a:hover,
-.cs-style-3 figcaption a.cs-hover {
-    font-style: oblique;
 }
 
 
