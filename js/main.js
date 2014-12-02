@@ -103,12 +103,6 @@ $(function() {
 			    var scrollYpos = $(document).scrollTop(); //scroll position
 			    //console.log(scrollYpos);
 			    var ScrollTop = parseInt($(window).scrollTop());
-			    var bottomIntroPos = $('.introduction').height();
-			    var processBottomPos = $('.process').position().top+$('.process').outerHeight(true);
-			    var aboutBottomPos = $('.about').position().top+$('.about').outerHeight(true);
-			    var studentBottomPos = $('.student-work').position().top+$('.student-work').outerHeight(true);
-
-        		console.log(bottomIntroPos);
 			    
 			    if (scrollYpos >= 20) {
 			    	//alert(ScrollTop);
@@ -156,27 +150,16 @@ $(function() {
 
 			    /*progress bar scrolling*/
 
-			    if(scrollYpos <= bottomIntroPos) {
-			    	$(".progress-bar").css("width", "25%");
-			    }
+			    $(window).scroll(function () {
+				    var s = $(window).scrollTop(), //scroll position
+				        d = $(document).height(), //bigger than window
+				        c = $(window).height();
+				    scrollPercent = (s / (d - c)) * 100;
+				    var position = scrollPercent * 2.5;
 
-			    else if(scrollYpos >= studentBottomPos-600) {
-			    	$(".progress-bar").css("width", "100%");
-			    }
+				    $(".progress-bar").css('width', position);
+				});
 
-			    else if(scrollYpos >= studentBottomPos-900) {
-			    	$(".progress-bar").css("width", "80%");
-			    }
-
-			    else if(scrollYpos >= aboutBottomPos-300) {
-			    	$(".progress-bar").css("width", "60%");
-			    }
-
-			    else if(scrollYpos >= processBottomPos-400) {
-			    	$(".progress-bar").css("width", "50%");
-			    }
-
-			    /*progress bar scrolling ends*/
 
 			    
 
