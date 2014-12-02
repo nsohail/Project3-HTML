@@ -777,6 +777,10 @@ and (min-width : 1224px) {
     clear: both;
   }
 
+  .slides-container {
+    height: 1200px;
+  }
+
   
 
 }
