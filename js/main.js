@@ -155,9 +155,10 @@ $(function() {
 				        d = $(document).height(), //bigger than window
 				        c = $(window).height();
 				    scrollPercent = (s / (d - c)) * 100;
-				    var position = scrollPercent * 2.5;
+				    var position = scrollPercent;
+				    console.log(position);
 
-				    $(".progress-bar").css('width', position);
+				    $(".progress-bar").css('width', position +'%');
 				});
 
 

@@ -103,7 +103,7 @@ figure {
   width: 0%;
   height: 100%;
   background:#ED734E;
-  -webkit-transition:width 1s;
+  -webkit-transition:width .1s;
 }
 
 nav {
@@ -130,7 +130,7 @@ nav > a {
 }
 
 nav > .last {
-  padding-right: 20;
+  padding-right: 20px;
 }
 
 header {
