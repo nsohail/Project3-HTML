@@ -83,7 +83,7 @@ figure {
   visibility: hidden;
 }
 
-.progress-bar {
+.progress-bar-container {
   text-align: right;
   height: 8px;
   position: fixed;
@@ -96,6 +96,14 @@ figure {
   display: none;
   -webkit-transition: top .2s ease-in-out;
   transition: top .2s ease-in-out;
+  overflow: hidden;
+}
+
+.progress-bar {
+  width: 20%;
+  height: 100%;
+  background:#ED734E;
+  -webkit-transition:width 1s;
 }
 
 nav {
@@ -624,7 +632,7 @@ and (min-width : 570px) {
     text-align: right;
   }
 
-  .progress-bar {
+  .progress-bar-container {
     display: block;
   }
 
