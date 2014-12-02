@@ -535,8 +535,8 @@ footer > p {
     max-width: 100%;
     display: block;
     position: relative;
-    -webkit-transition: transform 0.4s;
-    transition: transform 0.4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 .slides-container figcaption {
