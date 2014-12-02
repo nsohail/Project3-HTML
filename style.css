@@ -602,7 +602,10 @@ footer > p {
 
 
 
-
+.anchor {
+  padding-top: 90px;
+  margin-top: -90px;
+}
 
 
 
@@ -759,7 +762,11 @@ and (min-width : 1224px) {
 
 
 
-
+@media only screen and (min-height: 4000px) {
+  .student-work {
+    padding-bottom: 1000px;
+  }
+}
 
 
 
