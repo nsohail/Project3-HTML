@@ -637,10 +637,6 @@ and (max-width : 390px) {
   nav {
     display: none;
   }
-
-  .skroll {
-    margin-bottom: 500px;
-  }
 }
 
 
