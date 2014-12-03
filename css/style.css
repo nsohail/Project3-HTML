@@ -639,7 +639,7 @@ and (max-width : 390px) {
   }
 
   .skroll {
-    margin-bottom: -500px;
+    margin-bottom: 500px;
   }
 }
 
