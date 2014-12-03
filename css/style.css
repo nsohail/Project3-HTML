@@ -639,7 +639,7 @@ and (max-width : 390px) {
   }
 
   #skrollr-body {
-    margin-bottom: -40px;
+    margin-bottom: -200px;
   }
 }
 
