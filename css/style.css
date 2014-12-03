@@ -637,6 +637,10 @@ and (max-width : 390px) {
   nav {
     display: none;
   }
+
+  #skrollr-body {
+    margin-bottom: -40px;
+  }
 }
 
 
