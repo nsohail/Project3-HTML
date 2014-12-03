@@ -444,7 +444,7 @@ footer > p {
 /* full width/height container */
 .slides-container {
     min-width: 770px;
-    height: 855px;
+    height: 1136px;
     overflow: hidden;
     /*background: green;*/
     position: relative;
@@ -518,6 +518,27 @@ footer > p {
     height:150px;
     top:660px;
     right:0;
+}
+
+#slide-9 {
+    width:250px;
+    height:136px;
+    top:870px;
+    left:0;
+}
+
+#slide-10 {
+    width:350px;
+    height:176px;
+    top:830px;
+    right:0;
+}
+
+#slide-11 {
+    width:616px;
+    height:100px;
+    top:1030px;
+    left:0;
 }
 
 
