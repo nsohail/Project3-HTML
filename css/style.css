@@ -253,6 +253,10 @@ article > p {
   padding: 14px; 
 }
 
+.load > img {
+  width: 40%;
+}
+
 .quotes > header > figure {
   background-image: url(../images/words.svg);
   width: 100%;
