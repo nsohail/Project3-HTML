@@ -238,7 +238,6 @@ article > p {
 .student-thumbs .thumb {
   width: 65%;
   height: 40px;
-  background: #e7e7e7;
   margin: auto;
   margin-bottom: 5px;
   overflow: hidden; 
@@ -254,7 +253,7 @@ article > p {
 }
 
 .load img {
-  width: 40%;
+  width: 150px;
 }
 
 .quotes > header > figure {
@@ -637,6 +636,11 @@ and (max-width : 390px) {
   nav {
     display: none;
   }
+
+  .load img {
+    width: 40%;
+  }
+
 }
 
 
