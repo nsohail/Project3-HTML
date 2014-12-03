@@ -85,7 +85,7 @@ $(function() {
 
 		    $('.load').click(function (e) {
 		    	e.preventDefault();
-		        visibleStudentThumbs = (visibleStudentThumbs + 6 <= size_li) ? visibleStudentThumbs + 6 : size_li; //if 5+5 <= the # of li items, add 5 to 5. Otherwise x=the # of li items
+		        visibleStudentThumbs = (visibleStudentThumbs + 6 <= size_li) ? visibleStudentThumbs + 6 : size_li; //if 6+6 <= the # of li items, add 6 to 6. Otherwise x=the # of li items
 		        $('.front-student-list li:lt('+visibleStudentThumbs+')').fadeIn();
 
 		        if(visibleStudentThumbs == size_li){
