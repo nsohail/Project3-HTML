@@ -611,9 +611,6 @@ footer > p {
 
 
 
-
-
-
 .anchor {
   padding-top: 80px;
   margin-top: -80px;
@@ -628,6 +625,15 @@ footer > p {
 
 
 
+
+
+
+@media only screen 
+and (max-width : 320px) {
+  nav {
+    background: red;
+  }
+}
 
 
 @media only screen 
