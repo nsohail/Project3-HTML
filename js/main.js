@@ -101,7 +101,7 @@ $(function() {
 			$(window).scroll(function() {
 				
 			    var scrollYpos = $(document).scrollTop(); //scroll position
-			    //console.log(scrollYpos);
+			    console.log(scrollYpos);
 			    var ScrollTop = parseInt($(window).scrollTop());
 			    
 			    if (scrollYpos >= 20) {
@@ -156,7 +156,7 @@ $(function() {
 				        c = $(window).height();
 				    scrollPercent = (s / (d - c)) * 100;
 				    var position = scrollPercent;
-				    console.log(position);
+				    //console.log(position);
 
 				    $(".progress-bar").css('width', position +'%');
 				});
